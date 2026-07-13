@@ -4,7 +4,7 @@
 // ============================================================
 const API_BASE = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
   ? "http://localhost:4000"
-  : ""; // set this to your deployed backend URL, e.g. "https://your-api.onrender.com"
+  : "https://pradeep-portfolio-api.onrender.com"; // set this to your deployed backend URL, e.g. "https://your-api.onrender.com"
 
 // ------------------------------------------------------------
 // Mobile nav toggle

@@ -75,10 +75,11 @@ app.post("/api/contact", async (req, res) => {
     return res.status(500).json({ error: "Failed to store your message. Please try again." });
   }
 
-  // Optionally email it to you, if SMTP credentials are configured in .env
-  await maybeSendEmail(entry);
+  // Reply to the browser immediately — don't make the user wait on Gmail.
+  res.status(200).json({ success: true, message: "Message received." });
 
-  return res.status(200).json({ success: true, message: "Message received." });
+  // Optionally email it to you in the background, if SMTP credentials are configured in .env
+  maybeSendEmail(entry);
 });
 
 // GET all messages — protect this with the ADMIN_KEY in your .env before deploying publicly

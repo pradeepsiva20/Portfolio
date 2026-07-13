@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pradeep S</title>
+<meta name="description" content="Pradeep S — Aspiring Data Analyst. SQL, Power BI, Excel, Data Analysis. Portfolio of projects, skills and experience." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230E1116%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 fill=%22%23F2A93C%22 font-family=%22monospace%22 text-anchor=%22middle%22>P</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- noise / scanline overlay -->
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">
+      <span class="nav-prompt">&gt;</span> pradeep<span class="nav-cursor">_</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="assets/Pradeep_S_Resume.pdf" download>resume.pdf ↓</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <a href="assets/Pradeep_S_Resume.pdf" download>resume.pdf ↓</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> AVAILABLE FOR DATA ANALYST & JAVA DEVELOPER ROLES</p>
+
+      <div class="query-block" aria-hidden="true">
+         <span class="kw">SELECT</span> career<span class="punc">.</span>next_role
+         <br><span class="kw">FROM</span> pradeep
+         <br><span class="kw">WHERE</span> skills <span class="op">IN</span> (<span class="str">'SQL'</span>, <span class="str">'Java'</span>, <span class="str">'Power BI'</span>)
+         <br><span class="kw">AND</span> mindset <span class="op">=</span> <span class="str">'curious'</span><span class="blink">▌</span>
+      </div>
+        <h1>Hi, I'm Pradeep S —<br>I turn raw data into <span class="hl">decisions.</span></h1>
+
+        <p class="hero-sub">
+          Aspiring Data Analyst from Chennai, India, currently completing a B.E. in Cyber Security.
+          I work across SQL, Power BI and Excel to find the story inside a dataset — and I build
+          full-stack web apps on the side to keep my engineering sharp.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+
+        <div class="hero-meta">
+          <div><span class="num">8.1</span><span class="lbl">CGPA</span></div>
+          <div><span class="num">03</span><span class="lbl">Projects Shipped</span></div>
+          <div><span class="num">2026</span><span class="lbl">Graduating</span></div>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="panel-chrome">
+          <span class="chrome-dot" style="--c:#F2A93C"></span>
+          <span class="chrome-dot" style="--c:#35D0B8"></span>
+          <span class="chrome-dot" style="--c:#3B4152"></span>
+          <span class="chrome-title">insights_dashboard.pbix</span>
+        </div>
+        <div class="panel-body">
+          <div class="kpi-row">
+            <div class="kpi">
+              <span class="kpi-label">DONORS MATCHED</span>
+              <span class="kpi-value" data-count="482">0</span>
+            </div>
+            <div class="kpi">
+              <span class="kpi-label">AVG. RESPONSE</span>
+              <span class="kpi-value" data-count="6">0</span><span class="kpi-unit">min</span>
+            </div>
+          </div>
+          <svg class="chart-svg" viewBox="0 0 320 140" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#F2A93C" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="#F2A93C" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <g class="gridlines">
+              <line x1="0" y1="20" x2="320" y2="20"></line>
+              <line x1="0" y1="60" x2="320" y2="60"></line>
+              <line x1="0" y1="100" x2="320" y2="100"></line>
+            </g>
+            <path class="area-path" d="M0,110 L40,90 L80,95 L120,60 L160,70 L200,35 L240,45 L280,20 L320,30 L320,140 L0,140 Z" fill="url(#areaFill)"></path>
+            <path class="line-path" d="M0,110 L40,90 L80,95 L120,60 L160,70 L200,35 L240,45 L280,20 L320,30" fill="none"></path>
+          </svg>
+          <div class="bar-row">
+            <div class="bar" style="--h:38%"></div>
+            <div class="bar" style="--h:62%"></div>
+            <div class="bar" style="--h:45%"></div>
+            <div class="bar" style="--h:80%"></div>
+            <div class="bar" style="--h:55%"></div>
+            <div class="bar" style="--h:92%"></div>
+            <div class="bar" style="--h:70%"></div>
+          </div>
+          <div class="panel-footer">
+            <span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Excel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <div class="section-head">
+      <span class="section-tag">01 · ABOUT</span>
+      <h2>Analyst by trade, engineer by habit.</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-lede">
+        I'm an aspiring Data Analyst with a foundation in SQL, Power BI, Excel and applied data
+        analysis, paired with a Cyber Security degree that trained me to think in systems, edge
+        cases and risk. I like turning messy, real-world data into something a decision-maker can
+        actually act on — and I like building the software that produces that data in the first place.
+      </p>
+      <div class="about-facts">
+        <div class="fact">
+          <span class="fact-label">Location</span>
+          <span class="fact-value">Chennai, Tamil Nadu, India</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Degree</span>
+          <span class="fact-value">B.E. Cyber Security, 2022–2026</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Languages</span>
+          <span class="fact-value">English, Tamil</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Focus</span>
+          <span class="fact-value">Data Analysis · Full-Stack Dev</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section">
+    <div class="section-head">
+      <span class="section-tag">02 · SKILLS</span>
+      <h2>The stack behind the insights.</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Data &amp; Analytics</h3>
+        <div class="chip-row">
+          <span class="chip chip-amber">SQL</span>
+          <span class="chip chip-amber">Power BI</span>
+          <span class="chip chip-amber">Microsoft Excel</span>
+          <span class="chip chip-amber">Data Analysis</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Programming</h3>
+        <div class="chip-row">
+          <span class="chip chip-teal">C</span>
+          <span class="chip chip-teal">Java</span>
+          <span class="chip chip-teal">HTML</span>
+          <span class="chip chip-teal">CSS</span>
+          <span class="chip chip-teal">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Technical</h3>
+        <div class="chip-row">
+          <span class="chip">Website Development</span>
+          <span class="chip">UI/UX Design</span>
+          <span class="chip">Code Optimization</span>
+          <span class="chip">Cryptography Basics</span>
+          <span class="chip">Vulnerability Assessment</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Working Style</h3>
+        <div class="chip-row">
+          <span class="chip">Decision Making</span>
+          <span class="chip">Leadership</span>
+          <span class="chip">Project Management</span>
+          <span class="chip">Problem Solving</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section">
+    <div class="section-head">
+      <span class="section-tag">03 · PROJECTS</span>
+      <h2>Things I've shipped.</h2>
+    </div>
+
+    <div class="project-list">
+
+      <article class="project-card">
+        <div class="project-media">
+          <svg viewBox="0 0 300 200" class="project-illustration" aria-hidden="true">
+            <circle cx="80" cy="70" r="34" class="p-node p-node-a"/>
+            <circle cx="220" cy="60" r="24" class="p-node p-node-b"/>
+            <circle cx="150" cy="150" r="28" class="p-node p-node-a"/>
+            <path d="M80,70 L150,150 M220,60 L150,150" class="p-link"/>
+            <path d="M80,70 L220,60" class="p-link p-link-dash"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <span class="project-index">PROJECT 01</span>
+          <h3>Blood Donation Web Application</h3>
+          <p>
+            A web platform connecting blood donors with recipients. Users register, post blood
+            requests, and search for available donors by blood group and location — with dynamic
+            search and donor-recipient communication built in to speed up emergency response.
+          </p>
+          <div class="chip-row">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+            <span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">MongoDB</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reverse">
+        <div class="project-media">
+          <svg viewBox="0 0 300 200" class="project-illustration" aria-hidden="true">
+            <path d="M30,170 Q90,40 150,110 T270,30" class="p-route"/>
+            <circle cx="30" cy="170" r="8" class="p-pin"/>
+            <circle cx="270" cy="30" r="8" class="p-pin p-pin-b"/>
+            <circle cx="150" cy="110" r="5" class="p-pin-dot"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <span class="project-index">PROJECT 02</span>
+          <h3>Ambulance Path Finder</h3>
+          <p>
+            A location-based web app that helps ambulances find the shortest, fastest route to a
+            patient or hospital in an emergency. Uses real-time location tracking and route
+            optimization to cut travel time when every minute counts.
+          </p>
+          <div class="chip-row">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+            <span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">MongoDB</span>
+            <span class="chip">Google Maps API</span><span class="chip">Geolocation API</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media">
+          <svg viewBox="0 0 300 200" class="project-illustration" aria-hidden="true">
+            <rect x="60" y="40" width="180" height="120" rx="10" class="p-frame"/>
+            <line x1="90" y1="150" x2="150" y2="70" class="p-wave"/>
+            <line x1="150" y1="70" x2="210" y2="150" class="p-wave"/>
+            <circle cx="150" cy="100" r="14" class="p-node p-node-b"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <span class="project-index">PROJECT 03</span>
+          <h3>Music Player</h3>
+          <p>
+            A lightweight music player app built around a clean, distraction-free interface —
+            focused on smooth playback controls and an interface that gets out of the listener's way.
+          </p>
+          <div class="chip-row">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE / EDUCATION ================= -->
+  <section id="experience" class="section">
+    <div class="section-head">
+      <span class="section-tag">04 · EXPERIENCE &amp; EDUCATION</span>
+      <h2>How I got here.</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-marker"></div>
+        <div class="tl-content">
+          <span class="tl-date">2024 — Present</span>
+          <h3>Intern, Zybeak Technologies</h3>
+          <p>Gained hands-on industry exposure applying technical skills in a professional environment. Took part in multiple hackathons, solving real-world problems under time pressure.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-marker"></div>
+        <div class="tl-content">
+          <span class="tl-date">2022 — 2026</span>
+          <h3>B.E. Cyber Security — Saveetha Engineering College</h3>
+          <p>Thandalam, Chennai. CGPA: 8.1</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-marker"></div>
+        <div class="tl-content">
+          <span class="tl-date">2022</span>
+          <h3>Higher Secondary (12th) — Chanakya Mat. Hr. Sec. School</h3>
+          <p>Tindivanam. Percentage: 86%</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-marker"></div>
+        <div class="tl-content">
+          <span class="tl-date">2020</span>
+          <h3>Secondary School (10th) — Chanakya Mat. Hr. Sec. School</h3>
+          <p>Tindivanam. Percentage: 96%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <div class="section-head">
+      <span class="section-tag">05 · CONTACT</span>
+      <h2>Let's talk data.</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>Open to Data Analyst roles and internships. The fastest way to reach me is email — I read everything that comes through this form.</p>
+        <ul class="contact-list">
+          <li><span class="contact-label">Email</span><a href="mailto:Pradeep200420@gmail.com">Pradeep200420@gmail.com</a></li>
+          <li><span class="contact-label">Phone</span><a href="tel:+919597232073">+91 95972 32073</a></li>
+          <li><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/pradeep-s-8a630527a" target="_blank" rel="noopener">linkedin.com/in/pradeep-s</a></li>
+          <li><span class="contact-label">GitHub</span><a href="https://github.com/pradeepsiva20" target="_blank" rel="noopener">github.com/pradeepsiva20</a></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="What are you hiring for?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Pradeep S. Built with HTML, CSS, JavaScript &amp; Node/Express.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

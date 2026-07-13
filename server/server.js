@@ -93,28 +93,33 @@ app.get("/api/messages", (req, res) => {
 });
 
 async function maybeSendEmail(entry) {
-  const { SMTP_USER, SMTP_PASS, NOTIFY_EMAIL } = process.env;
-  if (!SMTP_USER || !SMTP_PASS) return; // Email not configured — message is still saved to disk.
+  const { RESEND_API_KEY, NOTIFY_EMAIL } = process.env;
+  if (!RESEND_API_KEY || !NOTIFY_EMAIL) return; // Email not configured — message is still saved to disk.
 
   try {
-    const nodemailer = require("nodemailer");
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: { user: SMTP_USER, pass: SMTP_PASS },
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${RESEND_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: "Portfolio Contact Form <onboarding@resend.dev>",
+        to: [NOTIFY_EMAIL],
+        reply_to: entry.email,
+        subject: `New portfolio message from ${entry.name}`,
+        text: `From: ${entry.name} <${entry.email}>\n\n${entry.message}`,
+      }),
     });
 
-    await transporter.sendMail({
-      from: `"Portfolio Contact Form" <${SMTP_USER}>`,
-      to: NOTIFY_EMAIL || SMTP_USER,
-      replyTo: entry.email,
-      subject: `New portfolio message from ${entry.name}`,
-      text: `From: ${entry.name} <${entry.email}>\n\n${entry.message}`,
-    });
+    if (!res.ok) {
+      const body = await res.text();
+      console.error("Email send failed (message was still saved):", res.status, body);
+    }
   } catch (err) {
     console.error("Email send failed (message was still saved):", err.message);
   }
 }
-
 app.listen(PORT, () => {
   console.log(`Portfolio API running on http://localhost:${PORT}`);
 });
